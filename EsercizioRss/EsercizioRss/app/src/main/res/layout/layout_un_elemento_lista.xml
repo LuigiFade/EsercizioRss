@@ -1,0 +1,118 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_title"
+        android:text="Titolo"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_descrizione"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:textAppearance="?attr/textAppearanceHeadline6"
+
+
+        />
+    <TextView
+        android:id="@+id/item_descrizione"
+        android:text="Descrizione"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_immagine"
+        app:layout_constraintTop_toTopOf="@id/item_title"
+
+
+        android:textAppearance="?attr/textAppearanceHeadline6"
+
+
+        />
+    <ImageView
+        android:id="@+id/item_immagine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_descrizione"
+        android:paddingLeft="50dp"
+
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/item_link"
+        android:text="luigiiivkfobkobkdobgkbofkbogfkbgfobkogbfgobkgfobkfobi"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+
+        app:layout_constraintStart_toEndOf="@id/item_immagine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_descrizione"
+
+
+
+        android:textAppearance="?attr/textAppearanceHeadline6"
+
+
+        />
+    <ImageView
+        android:id="@+id/item_immagine2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/item_immagine"
+        app:layout_constraintEnd_toEndOf="@id/item_immagine"
+        android:paddingLeft="50dp"
+
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <TextView
+        android:id="@+id/item_Data"
+        android:text="Data"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+
+        app:layout_constraintStart_toEndOf="@id/item_immagine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_link"
+
+
+
+        android:textAppearance="?attr/textAppearanceHeadline6"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
